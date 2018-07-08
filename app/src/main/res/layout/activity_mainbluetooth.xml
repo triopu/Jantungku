@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/bgbluetooth"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/Asa"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="23"
+        android:weightSum="100">
+        <LinearLayout
+            android:id="@+id/Graph"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BB"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="90">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="77"
+        android:weightSum="100">
+        <LinearLayout
+            android:id="@+id/A"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+
+            <Button
+                android:id="@+id/bConnect"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Connect"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/bDisconnect"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Disconnect"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/B"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LLX1"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_gravity="center">
+
+                <ToggleButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:checked="true"
+                    android:textOff="Scroll"
+                    android:textOn="Scroll"
+                    android:textSize="10dp"
+                    android:layout_weight="50"
+                    android:textColor="@color/white"
+                    android:id="@+id/tbScroll"
+                    android:layout_gravity="center" />
+
+                <ToggleButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:checked="true"
+                    android:textOff="Lock"
+                    android:textOn="Lock"
+                    android:textSize="10dp"
+                    android:layout_weight="50"
+                    android:textColor="@color/white"
+                    android:id="@+id/tbLock"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LLX2"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="50"
+                    android:text="-"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/bXminus"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="50"
+                    android:text="+"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/bXplus"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/D"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+            <ToggleButton
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:checked="true"
+                android:textOff="Downloading"
+                android:textOn="Uploading"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/tbInternet"
+                android:layout_gravity="center" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LLX3"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/bBrowse"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="50"
+                    android:text="File"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/bLoad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="50"
+                    android:text="Load"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/C"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LLX4"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:layout_gravity="center">
+
+                <ToggleButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:checked="false"
+                    android:textOff="NoRec"
+                    android:textOn="Rec"
+                    android:textSize="10sp"
+                    android:layout_weight="50"
+                    android:textColor="@color/white"
+                    android:id="@+id/tbRecord"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="50"
+                    android:text="Folder"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/bFolder"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/E"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+
+            <EditText
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="6.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_alignParentTop="true"
+                android:text=""
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/myfileName"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/background1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:text="HR: 60 bpm"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/QRS"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/background1"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
